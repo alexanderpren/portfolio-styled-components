@@ -1,12 +1,16 @@
 import React from "react";
 import { TextContainer } from "./styled";
+import { useTranslation, Trans } from "react-i18next";
 
-const index = () => {
+const TextHome = () => {
+  const { t, i18n } = useTranslation();
+  console.log("si se esta despĺegando");
   return (
     <TextContainer>
-      <h1>HI, I'M &lt; ALEX PREN /&gt;</h1>
+      <Trans i18nKey="description.part1"></Trans>
+      <h1 styles={{ color: "white" }}> {t("description.part2")} </h1>
     </TextContainer>
   );
 };
 
-export default index;
+export default TextHome;
