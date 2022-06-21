@@ -20,15 +20,15 @@ i18n
       en: {
         translation: {
           description: {
-            part1: "Hi, I'm <Alex-Pren />",
-            part2: "Hi, I'm <Alex-Pren />"
+            part1: "Hi, I'm <Alex-Pren />",   
+            part2: "I'm a Front-End Developer",        
           }
         }
       },
       es: {
         translation: {
           description: {
-            part1: "Hola, soy <1>Alex Pren</1>"
+            part1: "Hola, Me llamo <Alex-Pren />"
           }
         }
       }

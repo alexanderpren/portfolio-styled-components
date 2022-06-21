@@ -16,19 +16,20 @@ export const ButtonFlag = () => {
 
   const reportChange = (lng) => {
     console.log(`Language changed to ${language}`);
-      handleLanguageChange();
-    i18n.changeLanguage(lng); 
+    handleLanguageChange();
+    i18n.changeLanguage(language === "en" ? "es" : "en");
   };
 
   return (
     <ButtonContainer>
       <motion.section
-        onClick={()=>reportChange(language)}
+        onClick={() => reportChange(language)}
         initial={{ opacity: 0, translateX: 100 }}
         animate={{ opacity: 1, translateX: 0 }}
         transition={{ type: "spring", duration: 2 }}
       >
-       {language === "es" ? <SPAIN width={50} /> : <USA width={50} /> } 
+        <h2>Cambiar Idioma</h2>
+          {language === "es" ? <SPAIN width={50} /> : <USA width={50} />}
       </motion.section>
     </ButtonContainer>
   );
